@@ -150,7 +150,7 @@ export default function Home() {
       {/* 🚀 FLOATING AI RAG CHATBOT BUTTON */}
       <Link
         href="/chatbot"
-        className="fixed bottom-6 right-6 z-50 group"
+        className="fixed bottom-16 right-6 z-50 group"
       >
         <div
           className="relative flex items-center gap-3 px-5 py-3 rounded-full 
