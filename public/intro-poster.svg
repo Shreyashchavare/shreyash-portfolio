@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <circle cx="1000" cy="80" r="220" fill="#22D3EE" opacity="0.12"/>
+  <circle cx="200" cy="120" r="180" fill="#22D3EE" opacity="0.10"/>
+  <text x="80" y="620" fill="#22D3EE" font-size="48" font-family="sans-serif" opacity="0.9">Shreyash — Intro</text>
+</svg>
+
+

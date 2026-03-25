@@ -1,3 +1,17 @@
+## Contact form email setup
+
+This project supports emailing contact submissions via Resend. To enable:
+
+1. Install dependency (if not already):
+   
+   npm install resend
+
+2. Create a `.env.local` in `shreyash-portfolio/` with:
+   
+   RESEND_API_KEY=your_resend_api_key
+
+3. Restart the dev server. When unset, submissions are logged to the server console.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

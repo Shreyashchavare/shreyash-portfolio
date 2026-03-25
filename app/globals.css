@@ -6,3 +6,48 @@ html,
 body {
   height: 100%;
 }
+
+/* Theme variables */
+:root {
+  /* Light theme */
+  --primary: #0A84FF;   /* Electric Blue */
+  --secondary: #1E1E1E; /* Graphite Black (for headings/strong text) */
+  --accent: #00D4FF;    /* Cyan Glow */
+  --background: #F8FAFF;/* Soft Light background */
+  --text: #1E1E1E;      /* Graphite in light mode */
+  /* Surfaces */
+  --surface: rgba(10, 132, 255, 0.06);
+  --surface-hover: rgba(0, 212, 255, 0.10);
+  --border: rgba(10, 132, 255, 0.18);
+}
+
+.dark {
+  /* Dark theme */
+  --primary: #0A84FF;   /* Electric Blue */
+  --secondary: #1E1E1E; /* Graphite Black */
+  --accent: #00D4FF;    /* Cyan Glow */
+  --background: #0D1117;/* Deep Navy */
+  --text: #E6E6E6;      /* Soft White */
+  /* Surfaces */
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-hover: rgba(255, 255, 255, 0.10);
+  --border: rgba(255, 255, 255, 0.14);
+}
+
+/* Base surface colors use variables so Tailwind utilities can reference them */
+body {
+  background:
+    radial-gradient(1200px 600px at 120% -10%, color-mix(in oklab, var(--accent) 18%, transparent), transparent 60%),
+    radial-gradient(900px 500px at -20% 0%, color-mix(in oklab, var(--secondary) 18%, transparent), transparent 55%),
+    radial-gradient(800px 600px at 50% 100%, color-mix(in oklab, var(--primary) 18%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--background) 0%, var(--background) 100%);
+  color: var(--text);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
